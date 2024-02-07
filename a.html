@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0" />
+  <title>To-Do</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+</head>
+
+<body style="background-color: #eeedf5;">
+  <!--navbar-->
+  <nav class="navbar navbar-light navbar-fixed-top" style="background: #4e4faa">
+    <div class="container-fluid">
+      <img src="s.png" height="70" width="70" alt="applogo " />
+      <a class="navbar-brand fs-1 fw-1" style="
+            color: white;
+            font-family: 'Brush Script MT', Georgia, serif !important;
+          ">Task Master</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row pt-3">
+      <div class="col-2 pt-5">
+        <h2 class="fw-5" style="font-family: 'Merienda';font-size: 30px;">EVERY ACCOMPLISHMENT STARTS WITH THE DECISION TO TRY! </h2>
+      </div>
+
+      <div class="col-5 pt-5 d-flex justify-content-center" >
+        <div class="card" style="width:400px; height:fit 230px; background-color: #FFC2E9; color: #000;">
+          <div class="card-body">
+            <h3 class="card-title" style="text-align: center;">Tasks <i class="fa fa-angellist"></i> </h3>
+            <br>
+            
+              <!--Task input space-->
+              <div>
+              <form id="new-task-form">
+                <input type="text" id="new-task-input" style="border-color: #7e7777; border-radius: 15px; background-color: #c3bef0; color: #030441"
+                  placeholder="  What's to be done?" />
+
+                <input type="image" class="pt-2" id="new-task-submit" src="add.png" height="25" width="20" />
+              </form>
+            </div>
+
+            <!--task list-->
+            <section class="task-list">
+              <hr>
+              <div id="tasks">
+                <div class="task">
+                  <div class="content">
+                    <input type="text" class="text" value="My tasks!!" readonly style="border-color: #7e7777; border-radius: 15px; background-color: #c3bef0; color: #7e7777"/>
+                    <button class="edit btn">
+                      <i class="bi bi-pencil-fill"></i>
+                    </button>
+                    <button class="delete btn">
+                      <i class="bi bi-trash-fill"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 px-0 pr-5 mr-5">
+        <img class="img-fluid " src="one leg.png" alt="applogo " />
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
